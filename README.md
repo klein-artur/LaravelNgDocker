@@ -67,7 +67,7 @@ Usually, this package will start the laravel app on port 8800 and the angular ap
 ## Going live
 You should not use the `sh build.sh` command to publish your application, because the angular application is running on the development server, which is not suggested (you may even see a warning for this, running the shell script).
 
-To go live, you can call the `sh build.sh` script with some parameter, which one does not matter. I prefere calling it like `sh build.sh l` with `l` standing for "live". But as I said, id does not matter.
+To go live, you can call the `sh build.sh` script with some parameter, which one does not matter. I prefere calling it like `sh build.sh l` with `l` standing for "live". But as I said, it does not matter.
 This will build the angular project properly and serve it on a nginx webserver. At that moment, obviously changing the sources will not automatically change the running ones.
 
 ## Have Fun!
