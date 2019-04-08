@@ -15,13 +15,13 @@ if [ -z "$1" ]
 then
 
 	echo "Preparing build, setting angular for dev build."
-	sed -i '' 's/\.\/node/\.\/\.\.\/node/g' dynapp-web-app/angular.json
+	sed -i '' 's/"\.\/node/"\.\/\.\.\/node/g' web/angular.json
 	
 	cd docker-debug
 else
 
 	echo "Preparing build, setting angular for prod build."
-	sed -i '' 's/\.\/\.\.\/node/\.\/node/g' dynapp-web-app/angular.json
+	sed -i '' 's/"\.\/\.\.\/node/"\.\/node/g' web/angular.json
 	
 	echo "Cleaning ng build."
 	rm -rf ngbuild
